@@ -1,0 +1,55 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>m2m.camera.bundle</groupId>
+  <artifactId>camera-broker-servlet-bundle</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <name>Information Camera Servlet Bundle</name>
+	<packaging>bundle</packaging>
+ 
+	<dependencies>
+    <dependency>
+      <groupId>org.apache.felix</groupId>
+      <artifactId>org.osgi.core</artifactId>
+      <version>1.0.0</version>
+      <type>bundle</type>
+    </dependency>
+    <dependency>
+    	<groupId>org.apache.felix</groupId>
+    	<artifactId>org.apache.felix.framework</artifactId>
+    	<version>3.0.1</version>
+    	<type>bundle</type>
+    </dependency>
+    <dependency>
+    	<groupId>m2m.camera.broker</groupId>
+    	<artifactId>camera-broker-bundle</artifactId>
+    	<version>0-SNAPSHOT</version>
+    	<type>bundle</type>
+    </dependency>
+    <dependency>
+    	<groupId>org.apache.felix</groupId>
+    	<artifactId>org.apache.felix.http.bridge</artifactId>
+    	<version>2.0.4</version>
+    	<type>bundle</type>
+    </dependency>
+    <dependency>
+    	<groupId>org.apache.felix</groupId>
+    	<artifactId>javax.servlet</artifactId>
+    	<version>1.0.0</version>
+    	<type>bundle</type>
+    </dependency>
+	</dependencies>
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.felix</groupId>
+        <artifactId>maven-bundle-plugin</artifactId>
+        <extensions>true</extensions>
+        <configuration>
+          <instructions>
+            <Bundle-Activator>m2m.camera.broker.api.camera_servlet.Activator</Bundle-Activator>
+          </instructions>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+</project>

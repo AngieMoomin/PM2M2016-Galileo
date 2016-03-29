@@ -1,0 +1,33 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+ <modelVersion>4.0.0</modelVersion>
+ <groupId>m2m.camera.broker</groupId>
+ <artifactId>camera-broker-bundle</artifactId>
+ <version>0-SNAPSHOT</version>
+ <name>Camera Broker Service Bundle</name>
+ <packaging>bundle</packaging>
+ <dependencies>
+ <dependency>
+ <groupId>org.apache.felix</groupId>
+ <artifactId>org.osgi.core</artifactId>
+ <version>1.0.0</version>
+ </dependency>
+ </dependencies>
+
+<build>
+ <plugins>
+ <plugin>
+ <groupId>org.apache.felix</groupId>
+ <artifactId>maven-bundle-plugin</artifactId>
+ <extensions>true</extensions>
+ <configuration>
+ <instructions>
+ <Export-Package>m2m.camera.broker.api.*</Export-Package>
+ <Private-Package>m2m.camera.broker.api</Private-Package>
+ <Bundle-Activator>m2m.camera.broker.api.impl.Activator</Bundle-Activator>
+ </instructions>
+ </configuration>
+ </plugin>
+ </plugins>
+</build>
+</project>

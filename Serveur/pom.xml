@@ -1,0 +1,60 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.hascode.bundle</groupId>
+	<artifactId>information-broker-bundle</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<name>Information Broker Service Bundle</name>
+	<packaging>bundle</packaging>
+
+	<repositories>
+		<repository>
+			<id>springsource-releases</id>
+			<name>SpringSource Release Proxy</name>
+			<url>https://oss.sonatype.org/content/repositories/springsource-releases</url>
+		</repository>
+	</repositories>
+	<dependencies>
+		<dependency>
+			<groupId>org.springframework.osgi</groupId>
+			<artifactId>spring-osgi-web-extender</artifactId>
+			<version>1.2.0</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>org.springframework.web.servlet</artifactId>
+			<version>3.0.5.RELEASE</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.felix</groupId>
+			<artifactId>org.osgi.core</artifactId>
+			<version>1.0.0</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework.osgi</groupId>
+			<artifactId>spring-osgi-web</artifactId>
+			<version>1.2.0</version>
+		</dependency>
+
+	</dependencies>
+
+	<build>
+		<plugins>
+
+			<plugin>
+				<groupId>org.apache.felix</groupId>
+				<artifactId>maven-bundle-plugin</artifactId>
+				<extensions>true</extensions>
+				<configuration>
+					<instructions>
+						<Export-Package>com.hascode.bundle.information_broker.api</Export-Package>
+						<webapp>com.hascode.bundle.information_broker.webapps</webapp>>
+						<Private-Package>com.hascode.bundle.information_broker.*</Private-Package>
+						<Bundle-Activator>com.hascode.bundle.information_broker.impl.Activator</Bundle-Activator>
+					</instructions>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+</project>
