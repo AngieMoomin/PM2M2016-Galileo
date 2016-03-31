@@ -20,10 +20,12 @@
 			<artifactId>spring-osgi-web-extender</artifactId>
 			<version>1.2.0</version>
 		</dependency>
+		<!-- <dependency> <groupId>org.springframework</groupId> <artifactId>org.springframework.web.servlet</artifactId> 
+			<version>3.0.5.RELEASE</version> </dependency> -->
 		<dependency>
 			<groupId>org.springframework</groupId>
-			<artifactId>org.springframework.web.servlet</artifactId>
-			<version>3.0.5.RELEASE</version>
+			<artifactId>spring-webmvc</artifactId>
+			<version>3.0.3.RELEASE</version>
 		</dependency>
 		<dependency>
 			<groupId>org.apache.felix</groupId>
