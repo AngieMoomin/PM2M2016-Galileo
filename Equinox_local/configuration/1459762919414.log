@@ -1,0 +1,30 @@
+!SESSION 2016-04-04 11:41:59.137 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.7.0_95
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=motif, NL=zh_CN
+Command-line arguments:  -console
+
+!ENTRY org.eclipse.osgi 4 0 2016-04-04 11:42:00.644
+!MESSAGE Application error
+!STACK 1
+java.lang.RuntimeException: No application id has been found.
+	at org.eclipse.equinox.internal.app.EclipseAppContainer.startDefaultApp(EclipseAppContainer.java:229)
+	at org.eclipse.equinox.internal.app.EclipseAppContainer.start(EclipseAppContainer.java:92)
+	at org.eclipse.equinox.internal.app.Activator.addingService(Activator.java:129)
+	at org.osgi.util.tracker.ServiceTracker$Tracked.trackAdding(ServiceTracker.java:1064)
+	at org.osgi.util.tracker.ServiceTracker$Tracked.track(ServiceTracker.java:1042)
+	at org.osgi.util.tracker.ServiceTracker$Tracked.serviceChanged(ServiceTracker.java:967)
+	at org.eclipse.osgi.framework.internal.core.FilteredServiceListener.serviceChanged(FilteredServiceListener.java:94)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl.dispatchEvent(BundleContextImpl.java:1224)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:195)
+	at org.eclipse.osgi.framework.eventmgr.ListenerQueue.dispatchEventSynchronous(ListenerQueue.java:141)
+	at org.eclipse.osgi.framework.internal.core.Framework.publishServiceEventPrivileged(Framework.java:1603)
+	at org.eclipse.osgi.framework.internal.core.Framework.publishServiceEvent(Framework.java:1578)
+	at org.eclipse.osgi.framework.internal.core.ServiceRegistrationImpl.<init>(ServiceRegistrationImpl.java:103)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl.createServiceRegistration(BundleContextImpl.java:657)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl.registerService(BundleContextImpl.java:609)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl.registerService(BundleContextImpl.java:675)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:359)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:176)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.main(EclipseStarter.java:149)

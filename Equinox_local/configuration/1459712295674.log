@@ -1,0 +1,252 @@
+!SESSION 2016-04-03 21:38:15.102 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.7.0_80
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=zh_CN
+Command-line arguments:  -console
+
+!ENTRY org.eclipse.osgi 4 0 2016-04-03 21:38:16.116
+!MESSAGE Application error
+!STACK 1
+java.lang.IllegalStateException: Unable to acquire application service. Ensure that the org.eclipse.core.runtime bundle is resolved and started (see config.ini).
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:72)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:363)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:176)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.main(EclipseStarter.java:149)
+
+!ENTRY org.eclipse.osgi 2 0 2016-04-03 21:38:16.231
+!MESSAGE The following is a complete list of bundles which are not resolved, see the prior log entry for the root cause if it exists:
+!SUBENTRY 1 org.eclipse.osgi 2 0 2016-04-03 21:38:16.231
+!MESSAGE Bundle file:javax.servlet.jsp_2.0.0.v200706191603.jar [1] was not resolved.
+!SUBENTRY 2 javax.servlet.jsp 2 0 2016-04-03 21:38:16.231
+!MESSAGE Missing imported package javax.servlet_2.4.0.
+!SUBENTRY 2 javax.servlet.jsp 2 0 2016-04-03 21:38:16.231
+!MESSAGE Missing imported package javax.servlet.http_2.4.0.
+!SUBENTRY 2 javax.servlet.jsp 2 0 2016-04-03 21:38:16.231
+!MESSAGE Missing imported package javax.servlet.resources_2.4.0.
+!SUBENTRY 1 org.eclipse.osgi 2 0 2016-04-03 21:38:16.231
+!MESSAGE Bundle file:javax.servlet_2.4.0.v200706111738.jar [2] was not resolved.
+!SUBENTRY 1 org.eclipse.osgi 2 0 2016-04-03 21:38:16.231
+!MESSAGE Bundle file:org.apache.commons.el_1.0.0.v200706111724.jar [3] was not resolved.
+!SUBENTRY 2 org.apache.commons.el 2 0 2016-04-03 21:38:16.231
+!MESSAGE Missing imported package javax.servlet_2.4.0.
+!SUBENTRY 2 org.apache.commons.el 2 0 2016-04-03 21:38:16.231
+!MESSAGE Missing imported package javax.servlet.http_2.4.0.
+!SUBENTRY 2 org.apache.commons.el 2 0 2016-04-03 21:38:16.231
+!MESSAGE Missing imported package javax.servlet.jsp_2.0.0.
+!SUBENTRY 2 org.apache.commons.el 2 0 2016-04-03 21:38:16.232
+!MESSAGE Missing imported package javax.servlet.jsp.el_2.0.0.
+!SUBENTRY 2 org.apache.commons.el 2 0 2016-04-03 21:38:16.232
+!MESSAGE Missing imported package javax.servlet.jsp.resources_2.0.0.
+!SUBENTRY 2 org.apache.commons.el 2 0 2016-04-03 21:38:16.232
+!MESSAGE Missing imported package javax.servlet.jsp.tagext_2.0.0.
+!SUBENTRY 2 org.apache.commons.el 2 0 2016-04-03 21:38:16.232
+!MESSAGE Missing imported package javax.servlet.resources_2.4.0.
+!SUBENTRY 1 org.eclipse.osgi 2 0 2016-04-03 21:38:16.232
+!MESSAGE Bundle file:org.apache.commons.logging_1.0.4.v200706111724.jar [4] was not resolved.
+!SUBENTRY 1 org.eclipse.osgi 2 0 2016-04-03 21:38:16.232
+!MESSAGE Bundle file:org.apache.jasper_5.5.17.v200706111724.jar [5] was not resolved.
+!SUBENTRY 2 org.apache.jasper 2 0 2016-04-03 21:38:16.232
+!MESSAGE Missing imported package javax.servlet_2.4.0.
+!SUBENTRY 2 org.apache.jasper 2 0 2016-04-03 21:38:16.232
+!MESSAGE Missing imported package javax.servlet.http_2.4.0.
+!SUBENTRY 2 org.apache.jasper 2 0 2016-04-03 21:38:16.232
+!MESSAGE Missing imported package javax.servlet.jsp_2.0.0.
+!SUBENTRY 2 org.apache.jasper 2 0 2016-04-03 21:38:16.232
+!MESSAGE Missing imported package javax.servlet.jsp.el_2.0.0.
+!SUBENTRY 2 org.apache.jasper 2 0 2016-04-03 21:38:16.232
+!MESSAGE Missing imported package javax.servlet.jsp.resources_2.0.0.
+!SUBENTRY 2 org.apache.jasper 2 0 2016-04-03 21:38:16.233
+!MESSAGE Missing imported package javax.servlet.jsp.tagext_2.0.0.
+!SUBENTRY 2 org.apache.jasper 2 0 2016-04-03 21:38:16.233
+!MESSAGE Missing imported package javax.servlet.resources_2.4.0.
+!SUBENTRY 2 org.apache.jasper 2 0 2016-04-03 21:38:16.233
+!MESSAGE Missing imported package org.apache.commons.el_[1.0.0,2.0.0).
+!SUBENTRY 2 org.apache.jasper 2 0 2016-04-03 21:38:16.233
+!MESSAGE Missing imported package org.apache.commons.logging_[1.0.0,2.0.0).
+!SUBENTRY 2 org.apache.jasper 2 0 2016-04-03 21:38:16.233
+!MESSAGE Missing imported package org.apache.tools.ant_0.0.0.
+!SUBENTRY 2 org.apache.jasper 2 0 2016-04-03 21:38:16.233
+!MESSAGE Missing imported package org.apache.tools.ant.taskdefs_0.0.0.
+!SUBENTRY 2 org.apache.jasper 2 0 2016-04-03 21:38:16.233
+!MESSAGE Missing imported package org.apache.tools.ant.types_0.0.0.
+!SUBENTRY 2 org.apache.jasper 2 0 2016-04-03 21:38:16.233
+!MESSAGE Missing imported package org.apache.tools.ant.util_0.0.0.
+!SUBENTRY 1 org.eclipse.osgi 2 0 2016-04-03 21:38:16.233
+!MESSAGE Bundle file:org.eclipse.equinox.app_1.0.0.v20070606.jar [6] was not resolved.
+!SUBENTRY 2 org.eclipse.equinox.app 2 0 2016-04-03 21:38:16.233
+!MESSAGE Missing required bundle org.eclipse.equinox.registry_[3.2.0,4.0.0).
+!SUBENTRY 2 org.eclipse.equinox.app 2 0 2016-04-03 21:38:16.233
+!MESSAGE Missing required bundle org.eclipse.equinox.common_[3.2.0,4.0.0).
+!SUBENTRY 2 org.eclipse.equinox.app 2 0 2016-04-03 21:38:16.233
+!MESSAGE Missing imported package org.osgi.service.event_1.0.0.
+!SUBENTRY 2 org.eclipse.equinox.app 2 0 2016-04-03 21:38:16.234
+!MESSAGE Missing imported package org.osgi.service.event_1.0.0.
+!SUBENTRY 1 org.eclipse.osgi 2 0 2016-04-03 21:38:16.234
+!MESSAGE Bundle file:org.eclipse.equinox.common_3.3.0.v20070426.jar [7] was not resolved.
+!SUBENTRY 1 org.eclipse.osgi 2 0 2016-04-03 21:38:16.234
+!MESSAGE Bundle file:org.eclipse.equinox.device_1.0.0.v20070226.jar [8] was not resolved.
+!SUBENTRY 2 org.eclipse.equinox.device 2 0 2016-04-03 21:38:16.234
+!MESSAGE Missing imported package org.osgi.service.device_0.0.0.
+!SUBENTRY 2 org.eclipse.equinox.device 2 0 2016-04-03 21:38:16.234
+!MESSAGE Missing imported package org.osgi.service.log_1.2.0.
+!SUBENTRY 1 org.eclipse.osgi 2 0 2016-04-03 21:38:16.234
+!MESSAGE Bundle file:org.eclipse.equinox.event_1.0.100.v20070516.jar [9] was not resolved.
+!SUBENTRY 2 org.eclipse.equinox.event 2 0 2016-04-03 21:38:16.234
+!MESSAGE Missing imported package org.osgi.service.cm_0.0.0.
+!SUBENTRY 2 org.eclipse.equinox.event 2 0 2016-04-03 21:38:16.234
+!MESSAGE Missing imported package org.osgi.service.event_0.0.0.
+!SUBENTRY 2 org.eclipse.equinox.event 2 0 2016-04-03 21:38:16.234
+!MESSAGE Missing imported package org.osgi.service.log_0.0.0.
+!SUBENTRY 2 org.eclipse.equinox.event 2 0 2016-04-03 21:38:16.234
+!MESSAGE Missing imported package org.osgi.service.upnp_0.0.0.
+!SUBENTRY 2 org.eclipse.equinox.event 2 0 2016-04-03 21:38:16.234
+!MESSAGE Missing imported package org.osgi.service.useradmin_0.0.0.
+!SUBENTRY 2 org.eclipse.equinox.event 2 0 2016-04-03 21:38:16.235
+!MESSAGE Missing imported package org.osgi.service.wireadmin_0.0.0.
+!SUBENTRY 1 org.eclipse.osgi 2 0 2016-04-03 21:38:16.235
+!MESSAGE Bundle file:org.eclipse.equinox.http.jetty_1.0.0.v20070607.jar [10] was not resolved.
+!SUBENTRY 2 org.eclipse.equinox.http.jetty 2 0 2016-04-03 21:38:16.235
+!MESSAGE Missing imported package javax.servlet_[2.4.0,2.5.0).
+!SUBENTRY 2 org.eclipse.equinox.http.jetty 2 0 2016-04-03 21:38:16.235
+!MESSAGE Missing imported package javax.servlet.http_[2.4.0,2.5.0).
+!SUBENTRY 2 org.eclipse.equinox.http.jetty 2 0 2016-04-03 21:38:16.235
+!MESSAGE Missing imported package org.eclipse.equinox.http.servlet_1.0.0.
+!SUBENTRY 2 org.eclipse.equinox.http.jetty 2 0 2016-04-03 21:38:16.235
+!MESSAGE Missing imported package org.mortbay.http_[5.1.0,6.0.0).
+!SUBENTRY 2 org.eclipse.equinox.http.jetty 2 0 2016-04-03 21:38:16.235
+!MESSAGE Missing imported package org.mortbay.jetty.servlet_[5.1.0,6.0.0).
+!SUBENTRY 2 org.eclipse.equinox.http.jetty 2 0 2016-04-03 21:38:16.235
+!MESSAGE Missing imported package org.mortbay.util_[5.1.0,6.0.0).
+!SUBENTRY 2 org.eclipse.equinox.http.jetty 2 0 2016-04-03 21:38:16.235
+!MESSAGE Missing imported package org.osgi.service.cm_1.2.0.
+!SUBENTRY 1 org.eclipse.osgi 2 0 2016-04-03 21:38:16.235
+!MESSAGE Bundle file:org.eclipse.equinox.http.registry_1.0.0.v20070608.jar [11] was not resolved.
+!SUBENTRY 2 org.eclipse.equinox.http.registry 2 0 2016-04-03 21:38:16.235
+!MESSAGE Missing required bundle org.eclipse.equinox.common_0.0.0.
+!SUBENTRY 2 org.eclipse.equinox.http.registry 2 0 2016-04-03 21:38:16.236
+!MESSAGE Missing required bundle org.eclipse.equinox.registry_0.0.0.
+!SUBENTRY 2 org.eclipse.equinox.http.registry 2 0 2016-04-03 21:38:16.236
+!MESSAGE Missing imported package javax.servlet_2.3.0.
+!SUBENTRY 2 org.eclipse.equinox.http.registry 2 0 2016-04-03 21:38:16.236
+!MESSAGE Missing imported package javax.servlet.http_2.3.0.
+!SUBENTRY 2 org.eclipse.equinox.http.registry 2 0 2016-04-03 21:38:16.236
+!MESSAGE Missing imported package org.osgi.service.http_1.2.0.
+!SUBENTRY 1 org.eclipse.osgi 2 0 2016-04-03 21:38:16.236
+!MESSAGE Bundle file:org.eclipse.equinox.http.servlet_1.0.0.v20070606.jar [12] was not resolved.
+!SUBENTRY 2 org.eclipse.equinox.http.servlet 2 0 2016-04-03 21:38:16.236
+!MESSAGE Missing imported package javax.servlet_2.3.0.
+!SUBENTRY 2 org.eclipse.equinox.http.servlet 2 0 2016-04-03 21:38:16.237
+!MESSAGE Missing imported package javax.servlet.http_2.3.0.
+!SUBENTRY 2 org.eclipse.equinox.http.servlet 2 0 2016-04-03 21:38:16.237
+!MESSAGE Missing imported package org.osgi.service.http_1.2.0.
+!SUBENTRY 1 org.eclipse.osgi 2 0 2016-04-03 21:38:16.237
+!MESSAGE Bundle file:org.eclipse.equinox.http.servletbridge_1.0.0.v20070523.jar [13] was not resolved.
+!SUBENTRY 2 org.eclipse.equinox.http.servletbridge 2 0 2016-04-03 21:38:16.237
+!MESSAGE Missing imported package javax.servlet_2.3.0.
+!SUBENTRY 2 org.eclipse.equinox.http.servletbridge 2 0 2016-04-03 21:38:16.237
+!MESSAGE Missing imported package javax.servlet.http_2.3.0.
+!SUBENTRY 2 org.eclipse.equinox.http.servletbridge 2 0 2016-04-03 21:38:16.237
+!MESSAGE Missing imported package org.eclipse.equinox.http.servlet_1.0.0.
+!SUBENTRY 2 org.eclipse.equinox.http.servletbridge 2 0 2016-04-03 21:38:16.237
+!MESSAGE Missing imported package org.eclipse.equinox.servletbridge_1.0.0.
+!SUBENTRY 2 org.eclipse.equinox.http.servletbridge 2 0 2016-04-03 21:38:16.238
+!MESSAGE Missing imported package org.osgi.service.http_1.2.0.
+!SUBENTRY 1 org.eclipse.osgi 2 0 2016-04-03 21:38:16.238
+!MESSAGE Bundle file:org.eclipse.equinox.http_1.0.100.v20070423.jar [14] was not resolved.
+!SUBENTRY 2 org.eclipse.equinox.http 2 0 2016-04-03 21:38:16.238
+!MESSAGE Missing imported package javax.servlet_0.0.0.
+!SUBENTRY 2 org.eclipse.equinox.http 2 0 2016-04-03 21:38:16.238
+!MESSAGE Missing imported package javax.servlet.http_0.0.0.
+!SUBENTRY 2 org.eclipse.equinox.http 2 0 2016-04-03 21:38:16.238
+!MESSAGE Missing imported package org.osgi.service.cm_1.0.0.
+!SUBENTRY 2 org.eclipse.equinox.http 2 0 2016-04-03 21:38:16.238
+!MESSAGE Missing imported package org.osgi.service.http_1.1.0.
+!SUBENTRY 2 org.eclipse.equinox.http 2 0 2016-04-03 21:38:16.238
+!MESSAGE Missing imported package org.osgi.service.log_1.0.0.
+!SUBENTRY 1 org.eclipse.osgi 2 0 2016-04-03 21:38:16.238
+!MESSAGE Bundle file:org.eclipse.equinox.jsp.jasper.registry_1.0.0.v20070607.jar [15] was not resolved.
+!SUBENTRY 2 org.eclipse.equinox.jsp.jasper.registry 2 0 2016-04-03 21:38:16.238
+!MESSAGE Missing required bundle org.eclipse.equinox.registry_0.0.0.
+!SUBENTRY 2 org.eclipse.equinox.jsp.jasper.registry 2 0 2016-04-03 21:38:16.238
+!MESSAGE Missing required bundle org.eclipse.equinox.common_0.0.0.
+!SUBENTRY 2 org.eclipse.equinox.jsp.jasper.registry 2 0 2016-04-03 21:38:16.238
+!MESSAGE Missing imported package org.eclipse.equinox.jsp.jasper_0.0.0.
+!SUBENTRY 2 org.eclipse.equinox.jsp.jasper.registry 2 0 2016-04-03 21:38:16.239
+!MESSAGE Missing imported package javax.servlet_2.4.0.
+!SUBENTRY 2 org.eclipse.equinox.jsp.jasper.registry 2 0 2016-04-03 21:38:16.239
+!MESSAGE Missing imported package javax.servlet.http_2.4.0.
+!SUBENTRY 1 org.eclipse.osgi 2 0 2016-04-03 21:38:16.239
+!MESSAGE Bundle file:org.eclipse.equinox.jsp.jasper_1.0.0.v20070607.jar [16] was not resolved.
+!SUBENTRY 2 org.eclipse.equinox.jsp.jasper 2 0 2016-04-03 21:38:16.239
+!MESSAGE Missing imported package javax.servlet_2.4.0.
+!SUBENTRY 2 org.eclipse.equinox.jsp.jasper 2 0 2016-04-03 21:38:16.239
+!MESSAGE Missing imported package javax.servlet.http_2.4.0.
+!SUBENTRY 2 org.eclipse.equinox.jsp.jasper 2 0 2016-04-03 21:38:16.239
+!MESSAGE Missing imported package javax.servlet.jsp_2.0.0.
+!SUBENTRY 2 org.eclipse.equinox.jsp.jasper 2 0 2016-04-03 21:38:16.239
+!MESSAGE Missing imported package org.apache.jasper.servlet_0.0.0.
+!SUBENTRY 2 org.eclipse.equinox.jsp.jasper 2 0 2016-04-03 21:38:16.239
+!MESSAGE Missing imported package org.osgi.service.http_1.2.0.
+!SUBENTRY 1 org.eclipse.osgi 2 0 2016-04-03 21:38:16.239
+!MESSAGE Bundle file:org.eclipse.equinox.launcher_1.0.0.v20070606.jar [17] was not resolved.
+!SUBENTRY 1 org.eclipse.osgi 2 0 2016-04-03 21:38:16.240
+!MESSAGE Bundle file:org.eclipse.equinox.log_1.0.100.v20070226.jar [18] was not resolved.
+!SUBENTRY 2 org.eclipse.equinox.log 2 0 2016-04-03 21:38:16.240
+!MESSAGE Missing imported package org.osgi.service.cm_1.0.0.
+!SUBENTRY 2 org.eclipse.equinox.log 2 0 2016-04-03 21:38:16.240
+!MESSAGE Missing imported package org.osgi.service.log_1.2.0.
+!SUBENTRY 1 org.eclipse.osgi 2 0 2016-04-03 21:38:16.240
+!MESSAGE Bundle file:org.eclipse.equinox.metatype_1.0.0.v20070226.jar [19] was not resolved.
+!SUBENTRY 2 org.eclipse.equinox.metatype 2 0 2016-04-03 21:38:16.240
+!MESSAGE Missing imported package org.osgi.service.cm_0.0.0.
+!SUBENTRY 2 org.eclipse.equinox.metatype 2 0 2016-04-03 21:38:16.240
+!MESSAGE Missing imported package org.osgi.service.metatype_0.0.0.
+!SUBENTRY 1 org.eclipse.osgi 2 0 2016-04-03 21:38:16.240
+!MESSAGE Bundle file:org.eclipse.equinox.preferences_3.2.100.v20070522.jar [20] was not resolved.
+!SUBENTRY 2 org.eclipse.equinox.preferences 2 0 2016-04-03 21:38:16.240
+!MESSAGE Missing required bundle org.eclipse.equinox.common_[3.2.0,4.0.0).
+!SUBENTRY 2 org.eclipse.equinox.preferences 2 0 2016-04-03 21:38:16.240
+!MESSAGE Missing optionally required bundle org.eclipse.equinox.registry_[3.2.0,4.0.0).
+!SUBENTRY 1 org.eclipse.osgi 2 0 2016-04-03 21:38:16.240
+!MESSAGE Bundle file:org.eclipse.equinox.registry_3.3.0.v20070522.jar [21] was not resolved.
+!SUBENTRY 2 org.eclipse.equinox.registry 2 0 2016-04-03 21:38:16.240
+!MESSAGE Missing required bundle org.eclipse.equinox.common_[3.2.0,4.0.0).
+!SUBENTRY 2 org.eclipse.equinox.registry 2 0 2016-04-03 21:38:16.241
+!MESSAGE Missing imported package org.eclipse.core.runtime.jobs_0.0.0.
+!SUBENTRY 1 org.eclipse.osgi 2 0 2016-04-03 21:38:16.241
+!MESSAGE Bundle file:org.eclipse.equinox.servletbridge_1.0.0.v20070523.jar [22] was not resolved.
+!SUBENTRY 2 org.eclipse.equinox.servletbridge 2 0 2016-04-03 21:38:16.241
+!MESSAGE Missing imported package javax.servlet_2.3.0.
+!SUBENTRY 2 org.eclipse.equinox.servletbridge 2 0 2016-04-03 21:38:16.241
+!MESSAGE Missing imported package javax.servlet.http_2.3.0.
+!SUBENTRY 1 org.eclipse.osgi 2 0 2016-04-03 21:38:16.241
+!MESSAGE Bundle file:org.eclipse.equinox.useradmin_1.0.0.v20070226.jar [23] was not resolved.
+!SUBENTRY 2 org.eclipse.equinox.useradmin 2 0 2016-04-03 21:38:16.241
+!MESSAGE Missing imported package org.osgi.service.log_1.0.0.
+!SUBENTRY 2 org.eclipse.equinox.useradmin 2 0 2016-04-03 21:38:16.241
+!MESSAGE Missing imported package org.osgi.service.prefs_1.0.0.
+!SUBENTRY 2 org.eclipse.equinox.useradmin 2 0 2016-04-03 21:38:16.241
+!MESSAGE Missing imported package org.osgi.service.useradmin_1.0.0.
+!SUBENTRY 1 org.eclipse.osgi 2 0 2016-04-03 21:38:16.241
+!MESSAGE Bundle file:org.eclipse.osgi.services_3.1.200.v20070605.jar [24] was not resolved.
+!SUBENTRY 2 org.eclipse.osgi.services 2 0 2016-04-03 21:38:16.241
+!MESSAGE Missing imported package javax.servlet_0.0.0.
+!SUBENTRY 2 org.eclipse.osgi.services 2 0 2016-04-03 21:38:16.241
+!MESSAGE Missing imported package javax.servlet.http_0.0.0.
+!SUBENTRY 2 org.eclipse.osgi.services 2 0 2016-04-03 21:38:16.242
+!MESSAGE Missing imported package javax.servlet_0.0.0.
+!SUBENTRY 2 org.eclipse.osgi.services 2 0 2016-04-03 21:38:16.242
+!MESSAGE Missing imported package javax.servlet.http_0.0.0.
+!SUBENTRY 1 org.eclipse.osgi 2 0 2016-04-03 21:38:16.242
+!MESSAGE Bundle file:org.eclipse.osgi.util_3.1.200.v20070605.jar [25] was not resolved.
+!SUBENTRY 1 org.eclipse.osgi 2 0 2016-04-03 21:38:16.242
+!MESSAGE Bundle file:org.mortbay.jetty_5.1.11.v200706111724.jar [26] was not resolved.
+!SUBENTRY 2 org.mortbay.jetty 2 0 2016-04-03 21:38:16.242
+!MESSAGE Missing imported package javax.servlet_[2.4.0,2.5.0).
+!SUBENTRY 2 org.mortbay.jetty 2 0 2016-04-03 21:38:16.242
+!MESSAGE Missing imported package javax.servlet.http_[2.4.0,2.5.0).
+!SUBENTRY 2 org.mortbay.jetty 2 0 2016-04-03 21:38:16.242
+!MESSAGE Missing imported package javax.servlet.resources_[2.4.0,2.5.0).
+!SUBENTRY 2 org.mortbay.jetty 2 0 2016-04-03 21:38:16.242
+!MESSAGE Missing imported package org.apache.commons.logging_[1.0.0,2.0.0).
