@@ -1,0 +1,5 @@
+com/hascode/bundle/information_broker/impl/Activator.class
+com/hascode/bundle/information_broker/api/InformationBroker.class
+com/hascode/bundle/information_broker/impl/InformationBrokerImpl.class
+com/hascode/bundle/information_broker/impl/InfoCameraBrokerImpl.class
+com/hascode/bundle/information_broker/api/InfoCameraBroker.class

@@ -35,7 +35,7 @@ public class InfoCameraBrokerServlet extends HttpServlet{
 			InfoCameraBroker broker = (InfoCameraBroker) serviceTracker.getService();
 			if (broker != null) {
 				out.println("demarrage de la camera en cours ...");
-				broker.demarrerCamera("192.168.1.49");
+				broker.demarrerCamera("192.168.1.101");
 			}
 			out.println("</body></html>");
 

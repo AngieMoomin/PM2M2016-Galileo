@@ -25,7 +25,7 @@ public class CameraServlet extends HttpServlet {
 		try {
 			ServletOutputStream out = res.getOutputStream();
 
-			File f = new File("/home/ceytec/Bureau/releve.xml");
+			File f = new File("/home/root/workspace/Camera_Finale/releve.xml");
 			FileInputStream in = new FileInputStream(f);
 			byte[] buffer = new byte[1024];
 			int read=0;

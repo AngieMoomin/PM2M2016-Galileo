@@ -35,7 +35,7 @@ public class InfoBrokerServlet extends HttpServlet {
 			InformationBroker broker = (InformationBroker) serviceTracker.getService();
 			if (broker != null) {
 				out.print("Télechargement du relevé ...");
-				broker.download("192.168.1.49");
+				broker.download("192.168.1.101");
 			}
 			out.println("</body></html>");
 

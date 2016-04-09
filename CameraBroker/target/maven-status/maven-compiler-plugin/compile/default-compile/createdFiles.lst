@@ -1,0 +1,3 @@
+m2m/camera/broker/api/CameraBroker.class
+m2m/camera/broker/api/impl/CameraBrokerImpl.class
+m2m/camera/broker/api/impl/Activator.class

@@ -50,7 +50,7 @@ public class InformationBrokerImpl implements InformationBroker {
 			connexion.connect();
 			InputStream file = connexion.getInputStream();
 			String copy = url.getFile().substring(1)+"_downloaded";
-			FileOutputStream writeFile = new FileOutputStream("/home/ceytec/Bureau/"+copy);
+			FileOutputStream writeFile = new FileOutputStream("/home/sun/bureau/"+copy);
 			byte[] buffer = new byte[1024];
 			int read=0;
 			while ((read=file.read(buffer))>0){
